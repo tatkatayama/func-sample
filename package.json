@@ -1,0 +1,8 @@
+{
+    "name": "func-sample",
+    "version": "1.0.0",
+    "description": "This is an awesome Node.js project",
+    "main": "index.js",
+    "author": "tat.katayama",
+    "license": "MIT"
+  }
