@@ -29,3 +29,9 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
             " personalized response.", 
             status_code=200 
         )
+
+@bp.route(route="sample1")
+def sample1(req: func.HttpRequest) -> func.HttpResponse:
+    return func.HttpResponse(
+        "<H2>This is <b>sample1</b> HTTP-Trigger function</H2>"
+    )
