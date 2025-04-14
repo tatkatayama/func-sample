@@ -35,3 +35,9 @@ def sample1(req: func.HttpRequest) -> func.HttpResponse:
     return func.HttpResponse(
         "<H2>This is <b>sample1</b> HTTP-Trigger function</H2>"
     )
+
+@bp.route(route="sample2")
+def sample1(req: func.HttpRequest) -> func.HttpResponse:
+    return func.HttpResponse(
+        "<H2>This is <b>sample2</b> HTTP-Trigger function</H2>"
+    )
