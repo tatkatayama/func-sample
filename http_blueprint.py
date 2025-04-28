@@ -32,6 +32,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
 
 @bp.route(route="sample1")
 def sample1(req: func.HttpRequest) -> func.HttpResponse:
+    logging.info('sample1 trigger function processed a request.') 
     return func.HttpResponse(
         "<H2>This is <b>sample1</b> HTTP-Trigger function</H2>"
     )
